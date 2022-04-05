@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Outfit:wght@300;400;500;600&display=swap');
 :root{
     --soft-blue: hsl(215, 51%, 70%);
     --cyan: hsl(178, 100%, 50%);
@@ -7,9 +8,57 @@
     --white: hsl(0, 0%, 100%);
 }
 
+body{
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    background-color: var(--main-bg);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .card{
     width: 450px;
     background-color: var(--card-bg);
     color: var(--soft-blue);
+    padding: 25px 25px;
+    border-radius: 2%;
+    font-weight: 300;
+    line-height: 26px;
+    margin: 50px auto;
 }
 
+.card > h2 {
+    font-weight: 600;
+    color: white;    
+    font-size: 22px;
+    line-height: 28px;
+    margin: 20px 0px 20px;
+    
+}
+
+.card > h2:hover{
+    color: var(--cyan);
+}
+
+.nft-card{
+    width: 100%;
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    margin: 10px 0px;
+}
+
+.price, .time{
+    display: flex;
+}
+
+.price > img, .time > img{
+    margin-right: 6px;
+}
