@@ -28,6 +28,7 @@ body{
     font-weight: 300;
     line-height: 26px;
     margin: 50px auto;
+    position: relative;
 }
 
 .card > h2 {
@@ -47,12 +48,32 @@ body{
     width: 100%;
 }
 
+.img-overlay{
+    background-color: var(--cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    left: 25px;
+    top: 25px;
+    border-radius: 2%;
+    opacity: 0;
+}
+
+.img-overlay:hover{
+    opacity: 0.6;
+    transition: 0.5s;
+}
 
 .container{
     display: flex;
     justify-content: space-between;
     font-weight: 400;
     margin: 10px 0px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 20px;
 }
 
 .price, .time{
@@ -62,3 +83,28 @@ body{
 .price > img, .time > img{
     margin-right: 6px;
 }
+
+.price:first-child{
+    color: var(--cyan);
+}
+
+.creator{
+    display: flex;
+    align-items: center;
+}
+
+.creator > img{
+    width: 50px;
+    margin-right: 15px;
+    border: 2px solid var(--white);
+    border-radius: 100%;
+}
+
+.creator span{
+    color: var(--white);
+}
+
+.creator span:hover{
+    color: var(--cyan);
+}
+
